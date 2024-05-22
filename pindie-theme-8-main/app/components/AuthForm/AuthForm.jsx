@@ -30,7 +30,7 @@ export const AuthForm = (props) => {
         setMessage({ status: null, text: null });
         props.close();
       }, 1000);
-    }
+    };
     return () => clearTimeout(timer);
   }, [authContext.user]);
   return (
