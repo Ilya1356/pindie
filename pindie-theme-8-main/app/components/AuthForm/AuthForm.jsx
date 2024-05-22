@@ -21,7 +21,7 @@ export const AuthForm = (props) => {
       setMessage({ status: "success", text: "Вы авторизовались!" });
     } else {
       setMessage({ status: "error", text: "Неверные почта или пароль" });
-    }
+    };
   };
   useEffect(() => {
     let timer;
