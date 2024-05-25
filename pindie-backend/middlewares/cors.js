@@ -1,4 +1,4 @@
-const allowedCors = ["https://igromania.nomoredomainswork.ru"];
+const allowedCors = ["https://igruli.nomoredomainswork.ru"];
 
 function cors(req, res, next) {
     const { origin } = req.headers;
