@@ -1,5 +1,5 @@
 const app = express();
-const PORT = 3000;
+const PORT = 3001;
 import { App } from "./app/App";
 app.use(
   App,
