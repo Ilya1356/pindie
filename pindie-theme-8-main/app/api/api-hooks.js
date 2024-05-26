@@ -11,4 +11,4 @@ export const useGetDataByCategory = (endpoint, category) => {
     fetchData()
   }, [])
   return data
-}
+};
