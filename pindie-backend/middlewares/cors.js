@@ -1,4 +1,8 @@
-const allowedCors = ["https://igruli.nomoredomainswork.ru"];
+const allowedCors = [
+    "https://igruli.nomoredomainswork.ru",
+    "http://localhost:3000",
+    "http://localhost:3001"
+];
 
 function cors(req, res, next) {
     const { origin } = req.headers;
@@ -11,4 +15,4 @@ function cors(req, res, next) {
     next();
 }
 
-module.exports = cors;   
+module.exports = cors;  
