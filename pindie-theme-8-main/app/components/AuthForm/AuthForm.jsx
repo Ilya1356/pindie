@@ -21,7 +21,7 @@ export const AuthForm = (props) => {
       setMessage({ status: "success", text: "Вы авторизовались!" });
     } else {
       setMessage({ status: "error", text: "Неверные почта или пароль" });
-    };
+    }
   };
   useEffect(() => {
     let timer;
@@ -30,7 +30,7 @@ export const AuthForm = (props) => {
         setMessage({ status: null, text: null });
         props.close();
       }, 1000);
-    };
+    }
     return () => clearTimeout(timer);
   }, [authContext.user]);
   return (
@@ -42,7 +42,7 @@ export const AuthForm = (props) => {
           <input
             onInput={handleInput}
             className={Styles["form__field-input"]}
-            name="email"
+            name="identifier"
             type="email"
             placeholder="hello@world.com"
           />
@@ -52,9 +52,9 @@ export const AuthForm = (props) => {
           <input
             onInput={handleInput}
             className={Styles["form__field-input"]}
-            type="password"
-            name="password"
-            placeholder="***********"
+            name="email"
+            type="email"
+            placeholder="hello@world.com"
           />
         </label>
       </div>
