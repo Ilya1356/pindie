@@ -52,7 +52,7 @@ export const AuthForm = (props) => {
           <input
             onInput={handleInput}
             className={Styles["form__field-input"]}
-            name="password"
+            name="email"
             type="password"
             placeholder="password"
           />
