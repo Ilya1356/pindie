@@ -54,7 +54,7 @@ export const AuthForm = (props) => {
             className={Styles["form__field-input"]}
             name="password"
             type="password"
-            placeholder="hello@world.com"
+            placeholder="********"
           />
         </label>
       </div>
