@@ -51,10 +51,10 @@ export const AuthForm = (props) => {
           <span className={Styles["form__field-title"]}>Пароль</span>
           <input
             onInput={handleInput}
-            className={Styles["form__field-input"]}
-            name="password"
+            className={Styles['form__field-input']}
             type="password"
-            placeholder="********"
+            placeholder="***********"
+            name="password"
           />
         </label>
       </div>
