@@ -72,3 +72,4 @@ export const AuthForm = (props) => {
     </form>
   );
 };
+
